@@ -1,0 +1,12 @@
+<div class="welcome">
+  <h2>Quizzes</h2>
+  <div *ngFor="let q of quiz">
+    <mat-card>
+      <mat-card-title>{{q.label}}</mat-card-title>
+      <mat-card-content>{{q.description}}</mat-card-content>
+      <mat-card-footer>
+        <a routerLink="/{{q.name}}"><button class="btn btn-primary">Take Quiz</button></a>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+</div>
