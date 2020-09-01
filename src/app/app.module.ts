@@ -16,7 +16,7 @@ import { MatCardModule } from '@angular/material/card';
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
   { path: ':quizId', component: QuestionsComponent },
-  { path: '', redirectTo: "welcome", pathMatch: "prefix" },
+  { path: '', redirectTo: 'welcome', pathMatch: 'prefix' },
 ];
 
 @NgModule({
